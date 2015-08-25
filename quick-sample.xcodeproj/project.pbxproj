@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		415AAE82D43DC37337FA284F /* Pods_quick_sampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFB574209581E08E09EADB7 /* Pods_quick_sampleTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		43678E261B8B2F6700822E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43836F8F1B8B2B6E0085B749 /* ViewController.swift */; };
+		43678E361B8B2FDA00822E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43836F8D1B8B2B6E0085B749 /* AppDelegate.swift */; };
 		43836F8E1B8B2B6E0085B749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43836F8D1B8B2B6E0085B749 /* AppDelegate.swift */; };
 		43836F901B8B2B6E0085B749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43836F8F1B8B2B6E0085B749 /* ViewController.swift */; };
 		43836F931B8B2B6E0085B749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43836F911B8B2B6E0085B749 /* Main.storyboard */; };
 		43836F951B8B2B6E0085B749 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43836F941B8B2B6E0085B749 /* Images.xcassets */; };
 		43836F981B8B2B6E0085B749 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43836F961B8B2B6E0085B749 /* LaunchScreen.xib */; };
-		43836FA41B8B2B6E0085B749 /* quick_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43836FA31B8B2B6E0085B749 /* quick_sampleTests.swift */; };
+		43836FA41B8B2B6E0085B749 /* quick_sampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43836FA31B8B2B6E0085B749 /* quick_sampleSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43678E351B8B2FB900822E46 /* quick-sample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "quick-sample copy-Info.plist"; path = "/Users/ryoto/Public/quick-sample/quick-sample copy-Info.plist"; sourceTree = "<absolute>"; };
 		43836F881B8B2B6E0085B749 /* quick-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quick-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43836F8C1B8B2B6E0085B749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43836F8D1B8B2B6E0085B749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +39,10 @@
 		43836F971B8B2B6E0085B749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		43836F9D1B8B2B6E0085B749 /* quick-sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quick-sampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43836FA21B8B2B6E0085B749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43836FA31B8B2B6E0085B749 /* quick_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quick_sampleTests.swift; sourceTree = "<group>"; };
+		43836FA31B8B2B6E0085B749 /* quick_sampleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quick_sampleSpec.swift; sourceTree = "<group>"; };
+		448E7A736CA574800711703B /* Pods-quick-sampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quick-sampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-quick-sampleTests/Pods-quick-sampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFFB574209581E08E09EADB7 /* Pods_quick_sampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quick_sampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F2C06DF3764741EDFE78E9 /* Pods-quick-sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quick-sampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quick-sampleTests/Pods-quick-sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +57,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415AAE82D43DC37337FA284F /* Pods_quick_sampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41D8A1C33F280376A3A01103 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4F2C06DF3764741EDFE78E9 /* Pods-quick-sampleTests.debug.xcconfig */,
+				448E7A736CA574800711703B /* Pods-quick-sampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		43836F7F1B8B2B6E0085B749 = {
 			isa = PBXGroup;
 			children = (
 				43836F8A1B8B2B6E0085B749 /* quick-sample */,
 				43836FA01B8B2B6E0085B749 /* quick-sampleTests */,
 				43836F891B8B2B6E0085B749 /* Products */,
+				41D8A1C33F280376A3A01103 /* Pods */,
+				94F6E7473C8C68154F8DC7C2 /* Frameworks */,
+				43678E351B8B2FB900822E46 /* quick-sample copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +118,7 @@
 		43836FA01B8B2B6E0085B749 /* quick-sampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				43836FA31B8B2B6E0085B749 /* quick_sampleTests.swift */,
+				43836FA31B8B2B6E0085B749 /* quick_sampleSpec.swift */,
 				43836FA11B8B2B6E0085B749 /* Supporting Files */,
 			);
 			path = "quick-sampleTests";
@@ -110,6 +130,14 @@
 				43836FA21B8B2B6E0085B749 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94F6E7473C8C68154F8DC7C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFFB574209581E08E09EADB7 /* Pods_quick_sampleTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43836FAA1B8B2B6E0085B749 /* Build configuration list for PBXNativeTarget "quick-sampleTests" */;
 			buildPhases = (
+				1AB76383FE0551EE54B7C73A /* Check Pods Manifest.lock */,
 				43836F991B8B2B6E0085B749 /* Sources */,
 				43836F9A1B8B2B6E0085B749 /* Frameworks */,
 				43836F9B1B8B2B6E0085B749 /* Resources */,
+				DBE0EF4E09CB90D7CA6F3924 /* Embed Pods Frameworks */,
+				ECFEFEB6C83B7D78D9269B81 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +238,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AB76383FE0551EE54B7C73A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE0EF4E09CB90D7CA6F3924 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quick-sampleTests/Pods-quick-sampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECFEFEB6C83B7D78D9269B81 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quick-sampleTests/Pods-quick-sampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43836F841B8B2B6E0085B749 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43836FA41B8B2B6E0085B749 /* quick_sampleTests.swift in Sources */,
+				43678E361B8B2FDA00822E46 /* AppDelegate.swift in Sources */,
+				43678E261B8B2F6700822E46 /* ViewController.swift in Sources */,
+				43836FA41B8B2B6E0085B749 /* quick_sampleSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +439,7 @@
 		};
 		43836FAB1B8B2B6E0085B749 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F2C06DF3764741EDFE78E9 /* Pods-quick-sampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -377,6 +459,7 @@
 		};
 		43836FAC1B8B2B6E0085B749 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448E7A736CA574800711703B /* Pods-quick-sampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -409,6 +492,7 @@
 				43836FA91B8B2B6E0085B749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43836FAA1B8B2B6E0085B749 /* Build configuration list for PBXNativeTarget "quick-sampleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +501,7 @@
 				43836FAC1B8B2B6E0085B749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
